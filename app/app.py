@@ -18,10 +18,16 @@ st.set_page_config(
 # LOAD MODEL & ENCODERS
 # =====================================
 
-model = joblib.load('../models/ipl_model.pkl')
-le_team = joblib.load('../models/le_team.pkl')
-le_venue = joblib.load('../models/le_venue.pkl')
-le_decision = joblib.load('../models/le_decision.pkl')
+import os
+import joblib
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+model = joblib.load(os.path.join(BASE_DIR, 'models', 'ipl_model.pkl'))
+le_team = joblib.load(os.path.join(BASE_DIR, 'models', 'le_team.pkl'))
+le_venue = joblib.load(os.path.join(BASE_DIR, 'models', 'le_venue.pkl'))
+le_decision = joblib.load(os.path.join(BASE_DIR, 'models', 'le_decision.pkl'))
+
 
 
 # =====================================
