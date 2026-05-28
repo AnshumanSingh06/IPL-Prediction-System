@@ -18,10 +18,11 @@ st.set_page_config(
 # LOAD MODEL & ENCODERS
 # =====================================
 
-model = joblib.load('D:\IPL-PREDICTION-PROJECT\models\ipl_model.pkl')
-le_team = joblib.load('D:\IPL-PREDICTION-PROJECT\models\le_team.pkl')
-le_venue = joblib.load('D:\IPL-PREDICTION-PROJECT\models\le_venue.pkl')
-le_decision = joblib.load('D:\IPL-PREDICTION-PROJECT\models\le_decision.pkl')
+model = joblib.load('../models/ipl_model.pkl')
+le_team = joblib.load('../models/le_team.pkl')
+le_venue = joblib.load('../models/le_venue.pkl')
+le_decision = joblib.load('../models/le_decision.pkl')
+
 
 # =====================================
 # TITLE
